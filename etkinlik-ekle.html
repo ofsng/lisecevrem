@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etkinlik Ekle - lise.cevrem.net</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+<header>
+  <nav class="main-nav">
+    <div class="container">
+      <a href="/" class="logo">lise.cevrem.net</a>
+      <div class="nav-links">
+        <a href="/">Ana Sayfa</a>
+        <a href="#etkinlikler">Etkinlikler</a>
+        <a href="#hakkimizda">Hakkımızda</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="form-section">
+    <div class="container">
+      <h1>Yeni Etkinlik Ekle</h1>
+      <form id="event-form" class="event-form">
+        <div class="form-group">
+          <label for="title">Etkinlik Adı*</label>
+          <input type="text" id="title" name="title" required>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Etkinlik Açıklaması*</label>
+          <textarea id="description" name="description" rows="4" required></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="startDate">Başlangıç Tarihi*</label>
+            <input type="date" id="startDate" name="startDate" required>
+          </div>
+          <div class="form-group">
+            <label for="endDate">Bitiş Tarihi*</label>
+            <input type="date" id="endDate" name="endDate" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="type">Etkinlik Türü*</label>
+            <select id="type" name="type" required>
+              <option value="">Seçiniz</option>
+              <option value="mun">MUN</option>
+              <option value="munazara">Münazara</option>
+              <option value="zirve">Zirve</option>
+              <option value="calistay">Çalıştay</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="city">Şehir*</label>
+            <select id="city" name="city" required>
+              <option value="">Seçiniz</option>
+              <option value="istanbul">İstanbul</option>
+              <option value="ankara">Ankara</option>
+              <option value="izmir">İzmir</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="capacity">Kontenjan*</label>
+            <input type="number" id="capacity" name="capacity" required>
+          </div>
+          <div class="form-group">
+            <label for="deadline">Son Başvuru Tarihi*</label>
+            <input type="date" id="deadline" name="deadline" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="price">Katılım Ücreti</label>
+          <input type="number" id="price" name="price" placeholder="Ücretsizse boş bırakın">
+        </div>
+
+        <div class="form-group">
+          <label for="applicationForm">Başvuru Formu Linki*</label>
+          <input type="url" id="applicationForm" name="applicationForm" required>
+        </div>
+
+        <div class="form-group">
+          <label for="pressForm">Press Başvuru Formu Linki</label>
+          <input type="url" id="pressForm" name="pressForm">
+        </div>
+
+        <div class="form-group">
+          <label for="image">Etkinlik Görseli*</label>
+          <input type="file" id="image" name="image" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+          <label>Organizatör Bilgileri</label>
+          <div class="form-row">
+            <input type="text" name="organizerName" placeholder="İsim Soyisim*" required>
+            <input type="email" name="organizerEmail" placeholder="E-posta*" required>
+          </div>
+          <div class="form-row">
+            <input type="tel" name="organizerPhone" placeholder="Telefon*" required>
+            <input type="text" name="organizerInsta" placeholder="Instagram Kullanıcı Adı">
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Etkinlik Ekle</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>lise.cevrem.net</h3>
+        <p>Türkiye'nin en kapsamlı lise etkinlikleri platformu</p>
+      </div>
+      <div class="footer-section">
+        <h3>Hızlı Erişim</h3>
+        <a href="/">Ana Sayfa</a>
+        <a href="#etkinlikler">Etkinlikler</a>
+        <a href="#hakkimizda">Hakkımızda</a>
+      </div>
+      <div class="footer-section">
+        <h3>İletişim</h3>
+        <p>Email: info@cevrem.net</p>
+        <div class="social-links">
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/form.js"></script>
+
+</body>
+</html>

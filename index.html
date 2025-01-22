@@ -1,0 +1,133 @@
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lise.cevrem.net</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/event-modal.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav class="main-nav">
+    <div class="container">
+      <a href="/" class="logo">lise.cevrem.net</a>
+      <div class="nav-links">
+        <a href="/">Ana Sayfa</a>
+        <a href="#etkinlikler">Etkinlikler</a>
+        <a href="#hakkimizda">Hakkımızda</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Lise Etkinliklerini Keşfet</h1>
+      <p>Türkiye'nin en kapsamlı lise etkinlikleri platformu</p>
+      
+      <div class="search-box">
+        <input type="text" id="search" placeholder="Etkinlik ara...">
+        <div class="filters">
+          <select id="city" class="filter-input">
+            <option value="">Tüm Şehirler</option>
+            <option value="istanbul">İstanbul</option>
+            <option value="ankara">Ankara</option>
+            <option value="izmir">İzmir</option>
+          </select>
+          <select id="type" class="filter-input">
+            <option value="">Tüm Türler</option>
+            <option value="mun">MUN</option>
+            <option value="munazara">Münazara</option>
+            <option value="zirve">Zirve</option>
+            <option value="calistay">Çalıştay</option>
+          </select>
+          <select id="price" class="filter-input">
+            <option value="">Fiyat</option>
+            <option value="free">Ücretsiz</option>
+            <option value="paid">Ücretli</option>
+          </select>
+          <select id="status" class="filter-input">
+            <option value="">Durum</option>
+            <option value="active">Başvuru Açık</option>
+            <option value="closed">Başvuru Kapalı</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filter-stats">
+        <div class="stat-item">
+          <span>Toplam:</span>
+          <span class="stat-value" id="total-count">0</span>
+        </div>
+        <div class="stat-item">
+          <span>Ücretsiz:</span>
+          <span class="stat-value" id="free-count">0</span>
+        </div>
+        <div class="stat-item">
+          <span>Yaklaşan:</span>
+          <span class="stat-value" id="upcoming-count">0</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-events">
+    <div class="container">
+      <h2>Öne Çıkan Etkinlikler</h2>
+      <div class="events-grid" id="featured-events">
+        <!-- Featured events will be loaded here -->
+      </div>
+    </div>
+  </section>
+
+  <section class="category-events">
+    <div class="container">
+      <h2>Etkinlikler</h2>
+      <div class="category-tabs">
+        <button class="tab active" data-category="all">Tümü</button>
+        <button class="tab" data-category="mun">MUN</button>
+        <button class="tab" data-category="munazara">Münazara</button>
+        <button class="tab" data-category="zirve">Zirve</button>
+        <button class="tab" data-category="calistay">Çalıştay</button>
+      </div>
+      <div class="events-grid" id="category-events">
+        <!-- Category events will be loaded here -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>lise.cevrem.net</h3>
+        <p>Türkiye'nin en kapsamlı lise etkinlikleri platformu</p>
+      </div>
+      <div class="footer-section">
+        <h3>Hızlı Erişim</h3>
+        <a href="/">Ana Sayfa</a>
+        <a href="#etkinlikler">Etkinlikler</a>
+        <a href="#hakkimizda">Hakkımızda</a>
+      </div>
+      <div class="footer-section">
+        <h3>İletişim</h3>
+        <p>Email: info@cevrem.net</p>
+        <div class="social-links">
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/eventModal.js"></script>
+
+</body>
+</html>
